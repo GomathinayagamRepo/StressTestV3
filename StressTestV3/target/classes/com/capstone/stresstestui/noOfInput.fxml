@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.lang.Integer?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="478.0" prefWidth="650.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.capstone.stresstestui.NoOfInputController">
+   <children>
+       <JFXComboBox fx:id="noOfInputType" focusColor="WHITE" layoutX="189.0" layoutY="161.0" onAction="#onNoOfInputChange" prefHeight="41.0" prefWidth="272.0" promptText="INPUTS" style="-fx-background-color: #4d4d4d28; -fx-background-radius: 60;" stylesheets="@comBox.css" unFocusColor="WHITE">
+           <items>
+               <FXCollections fx:factory="observableArrayList">
+                   <Integer fx:id="one" fx:value="1" />
+                   <Integer fx:id="two" fx:value="2" />
+                   <Integer fx:id="three" fx:value="3" />
+                   <Integer fx:id="four" fx:value="4" />
+                   <Integer fx:id="five" fx:value="5" />
+               </FXCollections>
+           </items>
+       </JFXComboBox>
+      <JFXButton fx:id="noOfInputNext" buttonType="RAISED" focusTraversable="false" layoutX="264.0" layoutY="371.0" onAction="#onClickNoOfInputNext" prefHeight="33.0" prefWidth="121.0" style="-fx-background-color: #d4d5d9; -fx-background-radius: 60;" text="NEXT" textFill="#1d36b5" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="238.0" layoutY="105.0" text="SELECT NO OF INPUTS:" textAlignment="CENTER" textFill="#1d36b5">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
